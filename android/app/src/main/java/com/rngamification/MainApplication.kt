@@ -1,5 +1,6 @@
 package com.rngamification
 
+import android.os.Bundle;
 import android.app.Application
 import com.facebook.react.PackageList
 import com.facebook.react.ReactApplication
@@ -41,4 +42,9 @@ class MainApplication : Application(), ReactApplication {
       load()
     }
   }
+
+  override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(null)
+  }
+
 }
